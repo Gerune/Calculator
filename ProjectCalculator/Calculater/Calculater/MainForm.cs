@@ -17,35 +17,6 @@ namespace Calculater
             InitializeComponent();
         }
 
-        private void button12_Click(object sender, EventArgs e)
-        {
-            double firstArgument, secondArgument;
-            if (double.TryParse(FirstInput.Text, out firstArgument) &&
-               double.TryParse(SecondInput.Text, out secondArgument))
-            {
-                Value.Text = Convert.ToString(firstArgument + secondArgument);
-            }
-            else
-            {
-              Value.Text = "Error";
-            }
-            
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            double firstArgument, secondArgument;
-            if (double.TryParse(FirstInput.Text, out firstArgument) &&
-               double.TryParse(SecondInput.Text, out secondArgument))
-            {
-                Value.Text = Convert.ToString(firstArgument * secondArgument);
-            }
-            else
-            {
-                Value.Text = "Error";
-            }
-        }
 
         private void TakeAway_Click(object sender, EventArgs e)
         {
@@ -68,6 +39,34 @@ namespace Calculater
                double.TryParse(SecondInput.Text, out secondArgument) && secondArgument != 0)
             {
                 Value.Text = Convert.ToString(firstArgument / secondArgument);
+            }
+            else
+            {
+                Value.Text = "Error";
+            }
+        }
+
+        private void Sum_Click(object sender, EventArgs e)
+        {
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstInput.Text, out firstArgument) &&
+               double.TryParse(SecondInput.Text, out secondArgument))
+            {
+                Value.Text = Convert.ToString(firstArgument + secondArgument);
+            }
+            else
+            {
+                Value.Text = "Error";
+            }
+        }
+
+        private void Multiplication_Click(object sender, EventArgs e)
+        {
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstInput.Text, out firstArgument) &&
+               double.TryParse(SecondInput.Text, out secondArgument))
+            {
+                Value.Text = Convert.ToString(firstArgument * secondArgument);
             }
             else
             {

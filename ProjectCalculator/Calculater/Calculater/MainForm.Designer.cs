@@ -66,7 +66,7 @@
             this.Sum.TabIndex = 15;
             this.Sum.Text = "+";
             this.Sum.UseVisualStyleBackColor = true;
-            this.Sum.Click += new System.EventHandler(this.button12_Click);
+            this.Sum.Click += new System.EventHandler(this.Sum_Click);
             // 
             // TakeAway
             // 
@@ -86,7 +86,7 @@
             this.Multiplication.TabIndex = 17;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = true;
-            this.Multiplication.Click += new System.EventHandler(this.button14_Click);
+            this.Multiplication.Click += new System.EventHandler(this.Multiplication_Click);
             // 
             // Division
             // 
