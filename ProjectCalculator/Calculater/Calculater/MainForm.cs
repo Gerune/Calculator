@@ -17,19 +17,32 @@ namespace Calculater
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button12_Click(object sender, EventArgs e)
         {
-
+            int firstargument = Convert.ToInt32(FirstInput.Text),
+                secondargument = Convert.ToInt32(SecondInput.Text);
+            Value.Text = Convert.ToString(firstargument+secondargument);
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
+            int firstargument = Convert.ToInt32(FirstInput.Text),
+                secondargument = Convert.ToInt32(SecondInput.Text);
+            Value.Text = Convert.ToString(firstargument * secondargument);
+        }
 
+        private void TakeAway_Click(object sender, EventArgs e)
+        {
+            int firstargument = Convert.ToInt32(FirstInput.Text),
+                secondargument = Convert.ToInt32(SecondInput.Text);
+            Value.Text = Convert.ToString(firstargument - secondargument);
+        }
+
+        private void Division_Click(object sender, EventArgs e)
+        {
+            int firstargument = Convert.ToInt32(FirstInput.Text),
+                secondargument = Convert.ToInt32(SecondInput.Text);
+            Value.Text = Convert.ToString(firstargument / secondargument);
         }
     }
 }

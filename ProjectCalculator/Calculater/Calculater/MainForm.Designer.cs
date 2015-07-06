@@ -35,7 +35,6 @@
             this.TakeAway = new System.Windows.Forms.Button();
             this.Multiplication = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
-            this.Result = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstInput
@@ -77,6 +76,7 @@
             this.TakeAway.TabIndex = 16;
             this.TakeAway.Text = "-";
             this.TakeAway.UseVisualStyleBackColor = true;
+            this.TakeAway.Click += new System.EventHandler(this.TakeAway_Click);
             // 
             // Multiplication
             // 
@@ -96,22 +96,13 @@
             this.Division.TabIndex = 18;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
-            // 
-            // Result
-            // 
-            this.Result.Location = new System.Drawing.Point(23, 150);
-            this.Result.Name = "Result";
-            this.Result.Size = new System.Drawing.Size(73, 49);
-            this.Result.TabIndex = 19;
-            this.Result.Text = "=";
-            this.Result.UseVisualStyleBackColor = true;
+            this.Division.Click += new System.EventHandler(this.Division_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 369);
-            this.Controls.Add(this.Result);
+            this.ClientSize = new System.Drawing.Size(358, 181);
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiplication);
             this.Controls.Add(this.TakeAway);
@@ -135,7 +126,6 @@
         private System.Windows.Forms.Button TakeAway;
         private System.Windows.Forms.Button Multiplication;
         private System.Windows.Forms.Button Division;
-        private System.Windows.Forms.Button Result;
     }
 }
 
