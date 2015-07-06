@@ -1,11 +1,14 @@
-﻿namespace Calculater
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Calculater
 {
     partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -31,7 +34,7 @@
             this.FirstInput = new System.Windows.Forms.TextBox();
             this.SecondInput = new System.Windows.Forms.TextBox();
             this.Value = new System.Windows.Forms.TextBox();
-            this.Sum = new System.Windows.Forms.Button();
+            this.Summary = new System.Windows.Forms.Button();
             this.TakeAway = new System.Windows.Forms.Button();
             this.Multiplication = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
@@ -58,15 +61,15 @@
             this.Value.Size = new System.Drawing.Size(237, 20);
             this.Value.TabIndex = 2;
             // 
-            // Sum
+            // Summary
             // 
-            this.Sum.Location = new System.Drawing.Point(23, 93);
-            this.Sum.Name = "Sum";
-            this.Sum.Size = new System.Drawing.Size(73, 51);
-            this.Sum.TabIndex = 15;
-            this.Sum.Text = "+";
-            this.Sum.UseVisualStyleBackColor = true;
-            this.Sum.Click += new System.EventHandler(this.Sum_Click);
+            this.Summary.Location = new System.Drawing.Point(23, 93);
+            this.Summary.Name = "Summary";
+            this.Summary.Size = new System.Drawing.Size(73, 51);
+            this.Summary.TabIndex = 15;
+            this.Summary.Text = "+";
+            this.Summary.UseVisualStyleBackColor = true;
+            this.Summary.Click += new System.EventHandler(this.Calculator);
             // 
             // TakeAway
             // 
@@ -76,7 +79,7 @@
             this.TakeAway.TabIndex = 16;
             this.TakeAway.Text = "-";
             this.TakeAway.UseVisualStyleBackColor = true;
-            this.TakeAway.Click += new System.EventHandler(this.TakeAway_Click);
+            this.TakeAway.Click += new System.EventHandler(this.Calculator);
             // 
             // Multiplication
             // 
@@ -86,7 +89,7 @@
             this.Multiplication.TabIndex = 17;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = true;
-            this.Multiplication.Click += new System.EventHandler(this.Multiplication_Click);
+            this.Multiplication.Click += new System.EventHandler(this.Calculator);
             // 
             // Division
             // 
@@ -96,7 +99,7 @@
             this.Division.TabIndex = 18;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
-            this.Division.Click += new System.EventHandler(this.Division_Click);
+            this.Division.Click += new System.EventHandler(this.Calculator);
             // 
             // MainForm
             // 
@@ -106,7 +109,7 @@
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiplication);
             this.Controls.Add(this.TakeAway);
-            this.Controls.Add(this.Sum);
+            this.Controls.Add(this.Summary);
             this.Controls.Add(this.Value);
             this.Controls.Add(this.SecondInput);
             this.Controls.Add(this.FirstInput);
@@ -119,13 +122,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox FirstInput;
-        private System.Windows.Forms.TextBox SecondInput;
-        private System.Windows.Forms.TextBox Value;
-        private System.Windows.Forms.Button Sum;
-        private System.Windows.Forms.Button TakeAway;
-        private System.Windows.Forms.Button Multiplication;
-        private System.Windows.Forms.Button Division;
+        private TextBox FirstInput;
+        private TextBox SecondInput;
+        private TextBox Value;
+        private Button Summary;
+        private Button TakeAway;
+        private Button Multiplication;
+        private Button Division;
     }
 }
 
