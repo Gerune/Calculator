@@ -19,30 +19,60 @@ namespace Calculater
 
         private void button12_Click(object sender, EventArgs e)
         {
-            int firstargument = Convert.ToInt32(FirstInput.Text),
-                secondargument = Convert.ToInt32(SecondInput.Text);
-            Value.Text = Convert.ToString(firstargument+secondargument);
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstInput.Text, out firstArgument) &&
+               double.TryParse(SecondInput.Text, out secondArgument))
+            {
+                Value.Text = Convert.ToString(firstArgument + secondArgument);
+            }
+            else
+            {
+              Value.Text = "Error";
+            }
+            
+
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            int firstargument = Convert.ToInt32(FirstInput.Text),
-                secondargument = Convert.ToInt32(SecondInput.Text);
-            Value.Text = Convert.ToString(firstargument * secondargument);
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstInput.Text, out firstArgument) &&
+               double.TryParse(SecondInput.Text, out secondArgument))
+            {
+                Value.Text = Convert.ToString(firstArgument * secondArgument);
+            }
+            else
+            {
+                Value.Text = "Error";
+            }
         }
 
         private void TakeAway_Click(object sender, EventArgs e)
         {
-            int firstargument = Convert.ToInt32(FirstInput.Text),
-                secondargument = Convert.ToInt32(SecondInput.Text);
-            Value.Text = Convert.ToString(firstargument - secondargument);
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstInput.Text, out firstArgument) &&
+               double.TryParse(SecondInput.Text, out secondArgument))
+            {
+                Value.Text = Convert.ToString(firstArgument - secondArgument);
+            }
+            else
+            {
+                Value.Text = "Error";
+            }
         }
 
         private void Division_Click(object sender, EventArgs e)
         {
-            int firstargument = Convert.ToInt32(FirstInput.Text),
-                secondargument = Convert.ToInt32(SecondInput.Text);
-            Value.Text = Convert.ToString(firstargument / secondargument);
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstInput.Text, out firstArgument) &&
+               double.TryParse(SecondInput.Text, out secondArgument) && secondArgument != 0)
+            {
+                Value.Text = Convert.ToString(firstArgument / secondArgument);
+            }
+            else
+            {
+                Value.Text = "Error";
+            }
         }
     }
 }
