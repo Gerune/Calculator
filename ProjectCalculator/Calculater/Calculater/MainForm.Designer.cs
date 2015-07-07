@@ -40,27 +40,35 @@ namespace Calculater
             this.Division = new System.Windows.Forms.Button();
             this.Sin = new System.Windows.Forms.Button();
             this.Abs = new System.Windows.Forms.Button();
+            this.Sqrt = new System.Windows.Forms.Button();
+            this.Square = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
+            this.Gradus = new System.Windows.Forms.Button();
+            this.DivisionByX = new System.Windows.Forms.Button();
+            this.Percent = new System.Windows.Forms.Button();
+            this.Tg = new System.Windows.Forms.Button();
+            this.PowXY = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstInput
             // 
             this.FirstInput.Location = new System.Drawing.Point(23, 13);
             this.FirstInput.Name = "FirstInput";
-            this.FirstInput.Size = new System.Drawing.Size(237, 20);
+            this.FirstInput.Size = new System.Drawing.Size(316, 20);
             this.FirstInput.TabIndex = 0;
             // 
             // SecondInput
             // 
             this.SecondInput.Location = new System.Drawing.Point(23, 40);
             this.SecondInput.Name = "SecondInput";
-            this.SecondInput.Size = new System.Drawing.Size(237, 20);
+            this.SecondInput.Size = new System.Drawing.Size(316, 20);
             this.SecondInput.TabIndex = 1;
             // 
             // Value
             // 
             this.Value.Location = new System.Drawing.Point(23, 67);
             this.Value.Name = "Value";
-            this.Value.Size = new System.Drawing.Size(237, 20);
+            this.Value.Size = new System.Drawing.Size(316, 20);
             this.Value.TabIndex = 2;
             // 
             // Summary
@@ -87,7 +95,7 @@ namespace Calculater
             // 
             this.Multiplication.Location = new System.Drawing.Point(187, 93);
             this.Multiplication.Name = "Multiplication";
-            this.Multiplication.Size = new System.Drawing.Size(73, 51);
+            this.Multiplication.Size = new System.Drawing.Size(72, 51);
             this.Multiplication.TabIndex = 17;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = true;
@@ -115,7 +123,7 @@ namespace Calculater
             // 
             // Abs
             // 
-            this.Abs.Location = new System.Drawing.Point(103, 146);
+            this.Abs.Location = new System.Drawing.Point(102, 146);
             this.Abs.Name = "Abs";
             this.Abs.Size = new System.Drawing.Size(78, 54);
             this.Abs.TabIndex = 20;
@@ -123,11 +131,99 @@ namespace Calculater
             this.Abs.UseVisualStyleBackColor = true;
             this.Abs.Click += new System.EventHandler(this.CalculatorSingleArgument);
             // 
+            // Sqrt
+            // 
+            this.Sqrt.Location = new System.Drawing.Point(101, 260);
+            this.Sqrt.Name = "Sqrt";
+            this.Sqrt.Size = new System.Drawing.Size(78, 53);
+            this.Sqrt.TabIndex = 21;
+            this.Sqrt.Text = "Sqrt";
+            this.Sqrt.UseVisualStyleBackColor = true;
+            this.Sqrt.Click += new System.EventHandler(this.CalculatorSingleArgument);
+            // 
+            // Square
+            // 
+            this.Square.Location = new System.Drawing.Point(187, 145);
+            this.Square.Name = "Square";
+            this.Square.Size = new System.Drawing.Size(72, 55);
+            this.Square.TabIndex = 22;
+            this.Square.Text = "x^2";
+            this.Square.UseVisualStyleBackColor = true;
+            this.Square.Click += new System.EventHandler(this.CalculatorSingleArgument);
+            // 
+            // Cos
+            // 
+            this.Cos.Location = new System.Drawing.Point(23, 203);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(73, 55);
+            this.Cos.TabIndex = 23;
+            this.Cos.Text = "Cos";
+            this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.CalculatorSingleArgument);
+            // 
+            // Gradus
+            // 
+            this.Gradus.Location = new System.Drawing.Point(102, 203);
+            this.Gradus.Name = "Gradus";
+            this.Gradus.Size = new System.Drawing.Size(78, 54);
+            this.Gradus.TabIndex = 24;
+            this.Gradus.Text = "Gradus";
+            this.Gradus.UseVisualStyleBackColor = true;
+            this.Gradus.Click += new System.EventHandler(this.CalculatorSingleArgument);
+            // 
+            // DivisionByX
+            // 
+            this.DivisionByX.Location = new System.Drawing.Point(185, 260);
+            this.DivisionByX.Name = "DivisionByX";
+            this.DivisionByX.Size = new System.Drawing.Size(74, 53);
+            this.DivisionByX.TabIndex = 25;
+            this.DivisionByX.Text = "1/x";
+            this.DivisionByX.UseVisualStyleBackColor = true;
+            this.DivisionByX.Click += new System.EventHandler(this.CalculatorSingleArgument);
+            // 
+            // Percent
+            // 
+            this.Percent.Location = new System.Drawing.Point(266, 145);
+            this.Percent.Name = "Percent";
+            this.Percent.Size = new System.Drawing.Size(71, 56);
+            this.Percent.TabIndex = 26;
+            this.Percent.Text = "%";
+            this.Percent.UseVisualStyleBackColor = true;
+            this.Percent.Click += new System.EventHandler(this.Calculator);
+            // 
+            // Tg
+            // 
+            this.Tg.Location = new System.Drawing.Point(23, 260);
+            this.Tg.Name = "Tg";
+            this.Tg.Size = new System.Drawing.Size(73, 53);
+            this.Tg.TabIndex = 27;
+            this.Tg.Text = "Tg";
+            this.Tg.UseVisualStyleBackColor = true;
+            this.Tg.Click += new System.EventHandler(this.CalculatorSingleArgument);
+            // 
+            // PowXY
+            // 
+            this.PowXY.Location = new System.Drawing.Point(187, 203);
+            this.PowXY.Name = "PowXY";
+            this.PowXY.Size = new System.Drawing.Size(72, 52);
+            this.PowXY.TabIndex = 28;
+            this.PowXY.Text = "x^y";
+            this.PowXY.UseVisualStyleBackColor = true;
+            this.PowXY.Click += new System.EventHandler(this.Calculator);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 241);
+            this.ClientSize = new System.Drawing.Size(360, 366);
+            this.Controls.Add(this.PowXY);
+            this.Controls.Add(this.Tg);
+            this.Controls.Add(this.Percent);
+            this.Controls.Add(this.DivisionByX);
+            this.Controls.Add(this.Gradus);
+            this.Controls.Add(this.Cos);
+            this.Controls.Add(this.Square);
+            this.Controls.Add(this.Sqrt);
             this.Controls.Add(this.Abs);
             this.Controls.Add(this.Sin);
             this.Controls.Add(this.Division);
@@ -155,6 +251,14 @@ namespace Calculater
         private Button Division;
         private Button Sin;
         private Button Abs;
+        private Button Sqrt;
+        private Button Square;
+        private Button Cos;
+        private Button Gradus;
+        private Button DivisionByX;
+        private Button Percent;
+        private Button Tg;
+        private Button PowXY;
     }
 }
 

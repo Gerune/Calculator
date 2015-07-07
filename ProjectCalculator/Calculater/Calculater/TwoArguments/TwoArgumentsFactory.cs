@@ -16,6 +16,10 @@ namespace Calculater.TwoArguments
                     return new Multiplication();
                 case "Division":
                     return new Division();
+                case "Percent":
+                    return new Percent();
+                case "PowXY":
+                    return new PowXY();
                 default: 
                     throw new Exception();
             }
