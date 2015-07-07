@@ -7,3 +7,5 @@ C:\Users\Admin\Documents\GitHub\Calculator\ProjectCalculator\Calculater\Calculat
 C:\Users\Admin\Documents\GitHub\Calculator\ProjectCalculator\Calculater\Calculater\obj\Debug\Calculater.csproj.GenerateResource.Cache
 C:\Users\Admin\Documents\GitHub\Calculator\ProjectCalculator\Calculater\Calculater\obj\Debug\Calculater.exe
 C:\Users\Admin\Documents\GitHub\Calculator\ProjectCalculator\Calculater\Calculater\obj\Debug\Calculater.pdb
+C:\Users\Admin\Documents\GitHub\Calculator\ProjectCalculator\Calculater\Calculater\bin\Debug\nunit.framework.dll
+C:\Users\Admin\Documents\GitHub\Calculator\ProjectCalculator\Calculater\Calculater\bin\Debug\nunit.framework.xml
