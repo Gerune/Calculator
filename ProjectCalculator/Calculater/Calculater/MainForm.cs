@@ -10,14 +10,14 @@ namespace Calculater
             InitializeComponent();
         }
 
+
+
         double ParsArgument(string text)
         {
-            double argument;
-            double.TryParse(text, out argument);
-            return argument;
-           
+            double result;
+            return result = double.Parse(text);
         }
-        public void Calculator(object sender, EventArgs e)
+        void Calculator(object sender, EventArgs e)
         {
             double firstArgument = ParsArgument(FirstInput.Text);
             double secondArgument = ParsArgument(SecondInput.Text);
@@ -43,6 +43,30 @@ namespace Calculater
                         result = firstArgument / secondArgument;
                         break;
                     default: throw new Exception();
+                }
+
+                Value.Text = Convert.ToString(result);
+            }
+        }
+
+        void CalculatorSingleArgument(object sender, EventArgs e)
+        {
+            {
+                double firstArgument = ParsArgument(FirstInput.Text);
+
+                double result;
+                switch (((Button)sender).Name)
+                {
+                    case "Sin":
+                        result = Math.Sin(firstArgument);
+                        break;
+
+                    case "Abs":
+                        result = Math.Abs(firstArgument);
+                        break;
+
+                    default:
+                        throw new Exception("Unknown operation");
                 }
 
                 Value.Text = Convert.ToString(result);

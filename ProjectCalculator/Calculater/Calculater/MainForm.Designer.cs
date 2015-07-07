@@ -38,6 +38,8 @@ namespace Calculater
             this.TakeAway = new System.Windows.Forms.Button();
             this.Multiplication = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
+            this.Sin = new System.Windows.Forms.Button();
+            this.Abs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstInput
@@ -101,11 +103,33 @@ namespace Calculater
             this.Division.UseVisualStyleBackColor = true;
             this.Division.Click += new System.EventHandler(this.Calculator);
             // 
+            // Sin
+            // 
+            this.Sin.Location = new System.Drawing.Point(23, 146);
+            this.Sin.Name = "Sin";
+            this.Sin.Size = new System.Drawing.Size(73, 55);
+            this.Sin.TabIndex = 19;
+            this.Sin.Text = "Sin";
+            this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.CalculatorSingleArgument);
+            // 
+            // Abs
+            // 
+            this.Abs.Location = new System.Drawing.Point(103, 146);
+            this.Abs.Name = "Abs";
+            this.Abs.Size = new System.Drawing.Size(78, 54);
+            this.Abs.TabIndex = 20;
+            this.Abs.Text = "Abs";
+            this.Abs.UseVisualStyleBackColor = true;
+            this.Abs.Click += new System.EventHandler(this.CalculatorSingleArgument);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 181);
+            this.ClientSize = new System.Drawing.Size(360, 241);
+            this.Controls.Add(this.Abs);
+            this.Controls.Add(this.Sin);
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiplication);
             this.Controls.Add(this.TakeAway);
@@ -129,6 +153,8 @@ namespace Calculater
         private Button TakeAway;
         private Button Multiplication;
         private Button Division;
+        private Button Sin;
+        private Button Abs;
     }
 }
 
