@@ -6,7 +6,15 @@ namespace Calculater.OneArgument
     {
         public double Calculate(double argument)
         {
-            return 1/argument;
+            if (argument == 0)
+            {
+                throw new Exception("division by zero");
+            }
+            else
+            {
+                return (1 / argument);
+            }
+
         }
     }
 }

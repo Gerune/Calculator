@@ -4,9 +4,16 @@ namespace Calculater.TwoArguments
 {
     public class Division : IOperation
     {
-        public double Calculate(double firstargument, double secondargument)
+        public double Calculate(double firstArgument, double secondArgument)
         {
-            return firstargument / secondargument;
+            if (secondArgument == 0)
+            {
+                throw new Exception("Division by zero");
+            }
+            else
+            {
+                return firstArgument / secondArgument;
+            }
         }
     }
 }
