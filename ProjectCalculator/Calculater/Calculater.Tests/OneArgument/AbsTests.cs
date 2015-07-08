@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using Calculater.OneArgument;
 using NUnit.Framework;
 
@@ -8,13 +9,15 @@ namespace Calculater.Tests.OneArgument
     [TestFixture]
     public class AbsTests
     {
-        [Test]
-        public void CalculateTest()
+    [TestCase(-3, 3)]
+    [TestCase(0, 0)]
+    [TestCase(7, 7)]
+        
+        public void CalculateTest(double argument, double result )
         {
             var calculator = new Abs();
-            var testResult = calculator.Calculate(33);
-            var result = Math.Abs(33);
-            Assert.AreEqual(testResult,result);
+            var testResult = calculator.Calculate(argument);
+            Assert.AreEqual(result,testResult);
         }
     }
 }
