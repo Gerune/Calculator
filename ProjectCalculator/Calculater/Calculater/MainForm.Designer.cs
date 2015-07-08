@@ -48,6 +48,10 @@ namespace Calculater
             this.Percent = new System.Windows.Forms.Button();
             this.Tg = new System.Windows.Forms.Button();
             this.PowXY = new System.Windows.Forms.Button();
+            this.BubbleSort = new System.Windows.Forms.Button();
+            this.InsertionSort = new System.Windows.Forms.Button();
+            this.SelectionSort = new System.Windows.Forms.Button();
+            this.ShellSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstInput
@@ -211,11 +215,55 @@ namespace Calculater
             this.PowXY.UseVisualStyleBackColor = true;
             this.PowXY.Click += new System.EventHandler(this.Calculator);
             // 
+            // BubbleSort
+            // 
+            this.BubbleSort.Location = new System.Drawing.Point(23, 331);
+            this.BubbleSort.Name = "BubbleSort";
+            this.BubbleSort.Size = new System.Drawing.Size(75, 54);
+            this.BubbleSort.TabIndex = 31;
+            this.BubbleSort.Text = "BubbleSort";
+            this.BubbleSort.UseVisualStyleBackColor = true;
+            this.BubbleSort.Click += new System.EventHandler(this.ArraySorting);
+            // 
+            // InsertionSort
+            // 
+            this.InsertionSort.Location = new System.Drawing.Point(102, 331);
+            this.InsertionSort.Name = "InsertionSort";
+            this.InsertionSort.Size = new System.Drawing.Size(75, 54);
+            this.InsertionSort.TabIndex = 32;
+            this.InsertionSort.Text = "InsertionSort";
+            this.InsertionSort.UseVisualStyleBackColor = true;
+            this.InsertionSort.Click += new System.EventHandler(this.ArraySorting);
+            // 
+            // SelectionSort
+            // 
+            this.SelectionSort.Location = new System.Drawing.Point(183, 331);
+            this.SelectionSort.Name = "SelectionSort";
+            this.SelectionSort.Size = new System.Drawing.Size(86, 54);
+            this.SelectionSort.TabIndex = 33;
+            this.SelectionSort.Text = "SelectionSort";
+            this.SelectionSort.UseVisualStyleBackColor = true;
+            this.SelectionSort.Click += new System.EventHandler(this.ArraySorting);
+            // 
+            // ShellSort
+            // 
+            this.ShellSort.Location = new System.Drawing.Point(275, 331);
+            this.ShellSort.Name = "ShellSort";
+            this.ShellSort.Size = new System.Drawing.Size(75, 54);
+            this.ShellSort.TabIndex = 34;
+            this.ShellSort.Text = "ShellSort";
+            this.ShellSort.UseVisualStyleBackColor = true;
+            this.ShellSort.Click += new System.EventHandler(this.ArraySorting);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 366);
+            this.ClientSize = new System.Drawing.Size(351, 418);
+            this.Controls.Add(this.ShellSort);
+            this.Controls.Add(this.SelectionSort);
+            this.Controls.Add(this.InsertionSort);
+            this.Controls.Add(this.BubbleSort);
             this.Controls.Add(this.PowXY);
             this.Controls.Add(this.Tg);
             this.Controls.Add(this.Percent);
@@ -259,6 +307,10 @@ namespace Calculater
         private Button Percent;
         private Button Tg;
         private Button PowXY;
+        private Button BubbleSort;
+        private Button InsertionSort;
+        private Button SelectionSort;
+        private Button ShellSort;
     }
 }
 

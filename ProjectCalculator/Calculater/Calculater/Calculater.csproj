@@ -56,6 +56,12 @@
     <Compile Include="OneArgument\Sqrt.cs" />
     <Compile Include="OneArgument\Square.cs" />
     <Compile Include="OneArgument\Tg.cs" />
+    <Compile Include="SortingOfMassives\ArraySortingFactory.cs" />
+    <Compile Include="SortingOfMassives\BubbleSort.cs" />
+    <Compile Include="SortingOfMassives\InsertionSort.cs" />
+    <Compile Include="SortingOfMassives\ISorting.cs" />
+    <Compile Include="SortingOfMassives\SelectionSort.cs" />
+    <Compile Include="SortingOfMassives\ShellSort.cs" />
     <Compile Include="TwoArguments\Division.cs" />
     <Compile Include="TwoArguments\IOperation.cs" />
     <Compile Include="MainForm.cs">
@@ -99,6 +105,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

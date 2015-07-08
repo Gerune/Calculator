@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Calculater.TwoArguments
+﻿namespace Calculater.TwoArguments
 {
     public class Multiplication : IOperation
     {

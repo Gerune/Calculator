@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Calculater.OneArgument
+﻿namespace Calculater.OneArgument
 {
     public class Square : IOperation
     {

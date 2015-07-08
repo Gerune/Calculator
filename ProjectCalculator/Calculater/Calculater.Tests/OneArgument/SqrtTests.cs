@@ -1,6 +1,4 @@
 ﻿
-using System;
-using System.Collections.Generic;
 using Calculater.OneArgument;
 using NUnit.Framework;
 

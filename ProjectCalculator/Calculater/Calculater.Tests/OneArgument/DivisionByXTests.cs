@@ -1,6 +1,5 @@
 ﻿
 using System;
-using System.Collections.Generic;
 using Calculater.OneArgument;
 using NUnit.Framework;
 
@@ -24,7 +23,7 @@ namespace Calculater.Tests.OneArgument
         public void DivisionTestByXAsZero()
         {
             var calculator = new DivisionByX();
-            var result = calculator.Calculate(0);
+            calculator.Calculate(0);
         }
     }
 }

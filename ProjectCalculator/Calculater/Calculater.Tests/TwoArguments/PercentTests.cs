@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Calculater.OneArgument;
-using Calculater.TwoArguments;
+﻿using Calculater.TwoArguments;
 using NUnit.Framework;
 
 namespace Calculater.Tests.OneArgument
