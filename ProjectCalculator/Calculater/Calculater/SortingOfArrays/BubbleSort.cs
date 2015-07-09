@@ -1,4 +1,4 @@
-﻿namespace Calculater.SortingOfMassives
+﻿namespace Calculater.SortingOfArrays
 {
     public class BubbleSort : ISorting
     {

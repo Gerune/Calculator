@@ -1,6 +1,4 @@
-﻿using System.Runtime.Remoting.Messaging;
-
-namespace Calculater.SortingOfMassives
+﻿namespace Calculater.SortingOfArrays
 {
     public  class InsertionSort : ISorting
     {

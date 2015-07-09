@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calculater.SortingOfMassives
+namespace Calculater.SortingOfArrays
 {
     static class ArraySortingFactory
         {

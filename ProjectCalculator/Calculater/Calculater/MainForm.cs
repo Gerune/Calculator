@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Calculater.OneArgument;
-using Calculater.SortingOfMassives;
+using Calculater.SortingOfArrays;
 using Calculater.TwoArguments;
 
 namespace Calculater
