@@ -10,7 +10,6 @@ namespace Calculater.Tests.OneArgument
     [TestCase(-3, 3)]
     [TestCase(0, 0)]
     [TestCase(7, 7)]
-        
         public void CalculateTest(double argument, double result )
         {
             var calculator = new Abs();

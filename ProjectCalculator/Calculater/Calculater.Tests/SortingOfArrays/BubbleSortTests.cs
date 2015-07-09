@@ -1,5 +1,4 @@
-﻿using System;
-using Calculater.SortingOfArrays;
+﻿using Calculater.SortingOfArrays;
 using NUnit.Framework;
 
 namespace Calculater.Tests.SortingOfArrays

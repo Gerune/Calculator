@@ -8,7 +8,6 @@ namespace Calculater.Tests.OneArgument
     public class CosTests
     {
         [TestCase(0, 1)]
-
         public void CalculateTest(double argument, double result)
         {
             var calculator = new Cos();

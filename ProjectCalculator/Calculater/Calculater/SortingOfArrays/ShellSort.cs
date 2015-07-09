@@ -2,6 +2,11 @@
 {
     public class ShellSort : ISorting
     {
+        /// <summary>
+        /// Shell sorting
+        /// </summary>
+        /// <param name="array"> Array for sorting </param>
+        /// <returns> Sorted array </returns>
         public double[] Sort(double[] array)
         {
             {

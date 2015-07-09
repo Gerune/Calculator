@@ -16,7 +16,6 @@ namespace Calculater
         {
             InitializeComponent();
         }
-
         /// <summary>
         /// Function for operations with two numbers
         /// </summary>

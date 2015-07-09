@@ -4,6 +4,11 @@ namespace Calculator.Validation
 {
     public class Validator
     {
+        /// <summary>
+        /// Function for validation 
+        /// </summary>
+        /// <param name="operand"> number </param>
+        /// <returns> result </returns>
         public double ValidateNumber(String operand)
         {
             double result;
@@ -11,22 +16,7 @@ namespace Calculator.Validation
             {
                 return result;
             }
-            else
-            {
                 throw new Exception("Input error");
-            }
-        }
-
-        public double[] ValidateArray(String operand)
-        {
-            string[] divider = { "," };
-            string[] stringArray = operand.Split(divider, StringSplitOptions.RemoveEmptyEntries);
-            double[] result = new double[stringArray.Length];
-            for (Int16 i = 0; i < stringArray.Length; i++)
-            {
-                result[i] = ValidateNumber(stringArray[i]);
-            }
-            return result;
         }
 
     }
