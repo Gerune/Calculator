@@ -2,6 +2,11 @@
 {
     public  class InsertionSort : ISorting
     {
+       /// <summary>
+       /// Insertion sorting method
+       /// </summary>
+       /// <param name="array"> Array gor sorting </param>
+       /// <returns> Sorted array </returns>
         public double[] Sort(double[] array)
         {
             for (int i = 1; i < array.Length; i++)

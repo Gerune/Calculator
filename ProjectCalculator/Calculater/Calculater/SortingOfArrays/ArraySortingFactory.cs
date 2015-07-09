@@ -2,9 +2,16 @@
 
 namespace Calculater.SortingOfArrays
 {
+    
     static class ArraySortingFactory
         {
-            public static ISorting CreateSorting(string operation)
+        /// <summary>
+        /// Factory for Array sorting
+        /// </summary>
+        /// <param name="operation"> Name of variant of Sorting </param>
+        /// <returns> Sorting variant </returns>
+   
+        public static ISorting CreateSorting(string operation)
             {
                 switch (operation)
                 {

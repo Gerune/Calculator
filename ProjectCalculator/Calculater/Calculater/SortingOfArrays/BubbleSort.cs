@@ -1,7 +1,13 @@
 ﻿namespace Calculater.SortingOfArrays
 {
+    
     public class BubbleSort : ISorting
     {
+        /// <summary>
+        /// Bubble sorting method
+        /// </summary>
+        /// <param name="a"> Array for sorting </param>
+        /// <returns> Sorted array </returns>
         public double[] Sort(double[] a)
         {
             for (int i = 0; i < a.Length; i++)
